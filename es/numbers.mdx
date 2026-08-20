@@ -1,0 +1,76 @@
+---
+title: "Los Números"
+description: "El acta del campeonato — servida, por diversión, como una API de estadísticas."
+---
+
+<div className="ki5-hero">
+  <div className="ki5-eyebrow">GET /finals/2026 · 200 OK</div>
+  <h1 className="ki5-title">LOS <span className="o">NÚMEROS</span></h1>
+  <p className="ki5-sub">Como técnicamente esto es un sitio de documentación, vamos a documentar el título como si fuera una API. Los mismos hechos. Más monoespaciado. <b>Los endpoints son ilustrativos</b> — los números son reales.</p>
+</div>
+
+<div className="ki5-tiles">
+  <div className="ki5-tile"><div className="statnum">32.6</div><div className="cap">Brunson pts/juego en Finales</div></div>
+  <div className="ki5-tile"><div className="statnum">4</div><div className="cap">victorias, todas desde atrás</div></div>
+  <div className="ki5-tile"><div className="statnum">14</div><div className="cap">triples Spurs, mitad del J4</div></div>
+  <div className="ki5-tile"><div className="statnum">1.2s</div><div className="cap">en el palmeo de Anunoby</div></div>
+</div>
+
+## El esquema de estadísticas
+
+<ResponseField name="mvp_finales" type="string" required>
+  `Jalen Brunson`. Promedió ~32.6 en la serie; anotó 45 en el Juego 5 (récord de las Finales para la franquicia, superando los 38 de Willis Reed).
+</ResponseField>
+
+<ResponseField name="resultado_serie" type="string" required>
+  `NYK 4 – SAS 1`. Knicks en cinco. Sí, exactamente como el nombre del repositorio.
+</ResponseField>
+
+<ResponseField name="remontadas" type="integer">
+  `4` — número de victorias de los Knicks que empezaron con un déficit de dos dígitos. También el número de victorias que tuvieron.
+</ResponseField>
+
+<ResponseField name="sequia_terminada" type="integer">
+  `53` años. Título anterior: 1973.
+</ResponseField>
+
+## El acta, de tres formas
+
+<CodeGroup>
+
+```json finals.json
+{
+  "campeon": "New York Knicks",
+  "serie": "4-1",
+  "mvp": { "nombre": "Jalen Brunson", "j5_pts": 45 },
+  "cierre": { "fecha": "2026-06-13", "marcador": "94-90", "sede": "San Antonio" },
+  "victoria_clave": { "juego": 4, "deficit": 29, "record": "mayor remontada en Finales de la historia" }
+}
+```
+
+```csv finals.csv
+juego,sede,resultado,marcador,nota
+1,SA,G,105-95,abajo 14
+2,SA,G,105-104,+1
+3,NY,P,111-115,unica victoria Spurs
+4,NY,G,107-106,remontada +29
+5,SA,G,94-90,cierre
+```
+
+```markdown finals.md
+| Juego | Result. | Marcador | La historia                |
+|-------|---------|----------|----------------------------|
+| 1     | G       | 105-95   | Borró un hoyo de 14 pts    |
+| 4     | G       | 107-106  | Abajo 81-52. Milagro.      |
+| 5     | G       | 94-90    | Brunson 45. Banderín N.º 3.|
+```
+
+</CodeGroup>
+
+## Los colores del equipo, para que conste
+
+La pintura de guerra con la que está pintado todo este sitio: naranja Knicks `#F58426` y azul real Knicks `#006BB6`, sobre un fondo noche-de-cancha `#0B1220`.
+
+<Info>
+Todo lo de arriba es real. La única ficción es fingir que Jalen Brunson tiene un endpoint REST. Visto lo de junio, tampoco habría devuelto un 500.
+</Info>

@@ -1,0 +1,55 @@
+---
+title: "Detrás del Banderín"
+description: "Cómo se construyó esta carta de amor — el repositorio, el estilo y los componentes."
+---
+
+<div className="ki5-hero">
+  <div className="ki5-eyebrow">Colofón · Cómo se hace la salchicha (y el confeti)</div>
+  <h1 className="ki5-title">DETRÁS DEL <span className="o">BANDERÍN</span></h1>
+  <p className="ki5-sub">Bajo la pintura de guerra, esto es un sitio Mintlify de lo más normal — solo que lleva puesta una piel personalizada, algo de confeti y muchísimo orgullo cívico.</p>
+</div>
+
+## Qué hay en el repositorio
+
+<Tree>
+  <Tree.Folder name="Ki5" defaultOpen>
+    <Tree.File name="docs.json" />
+    <Tree.File name="custom.css" />
+    <Tree.File name="custom.js" />
+    <Tree.File name="index.mdx" />
+    <Tree.Folder name="es" defaultOpen>
+      <Tree.File name="index.mdx" />
+      <Tree.File name="series.mdx" />
+    </Tree.Folder>
+    <Tree.Folder name="logo">
+      <Tree.File name="light.svg" />
+      <Tree.File name="dark.svg" />
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+<GitHub.Repo repo="winderba/Ki5" />
+
+## Cómo funciona el estilo
+
+<Steps>
+  <Step title="docs.json pone los huesos">
+    Naranja primario (`#F58426`), oscuro por defecto, Anton para los títulos e Inter para el cuerpo.
+  </Step>
+  <Step title="custom.css pinta la pintura de guerra">
+    Cargado automáticamente por Mintlify. Cada hero, tarjeta de jugador, marcador y caja de Dolan Watch es una clase `.ki5-*`.
+  </Step>
+  <Step title="custom.js suelta el confeti">
+    Un pequeño motor de canvas — un botón **🎉 Confetti** en la barra superior, más una explosión secreta con tres flechas arriba en cualquier página.
+  </Step>
+</Steps>
+
+## Construye tu propio homenaje
+
+<Prompt description="Roba este prompt para el sitio de tu propio equipo">
+Créame un sitio de documentación Mintlify que sea una carta de amor al campeonato de mi equipo. Usa los colores del equipo, añade un custom.css con heroes tipo jumbotron y tarjetas de jugador, un efecto de confeti en custom.js, y escríbelo con voz cinematográfica. Hazlo divertido y un poco tonto.
+</Prompt>
+
+<Note>
+Hecho con naranja, azul y 53 años de paciencia. Vamos Knicks. 🏀🧡
+</Note>
