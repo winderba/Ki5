@@ -38,7 +38,7 @@
           { "group": "Las Finales", "pages": ["es/series", "es/game4", "es/numbers"] },
           { "group": "La Celebración", "pages": ["es/parade", "es/fans"] },
           { "group": "Las Leyendas", "pages": ["es/roster"] },
-          { "group": "Detrás del Banderín", "pages": ["es/colophon"] }
+          { "group": "Detrás del Banderín", "pages": ["es/colophon", "es/changelog"] }
         ]
       }
     ],
