@@ -23,45 +23,97 @@
     "languages": [
       {
         "language": "en",
-        "anchors": [
+        "pages": [
           {
-            "anchor": "Watch the Parade",
-            "icon": "youtube",
-            "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM"
+            "group": "The Ring",
+            "pages": [
+              "index"
+            ]
           },
           {
-            "anchor": "NBA.com Recap",
-            "icon": "newspaper",
-            "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch"
+            "group": "The Finals",
+            "pages": [
+              "series",
+              "game4",
+              "numbers"
+            ]
           },
           {
-            "anchor": "Changelog",
-            "icon": "clock-rotate-left",
-            "href": "/changelog"
+            "group": "The Celebration",
+            "pages": [
+              "parade",
+              "fans"
+            ]
+          },
+          {
+            "group": "The Legends",
+            "pages": [
+              "roster"
+            ]
+          },
+          {
+            "group": "Behind the Banner",
+            "pages": [
+              "colophon",
+              "changelog"
+            ]
           }
         ]
       },
       {
         "language": "es",
-        "anchors": [
+        "pages": [
           {
-            "anchor": "Ver el Desfile",
-            "icon": "youtube",
-            "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM"
+            "group": "El Anillo",
+            "pages": [
+              "es/index"
+            ]
           },
           {
-            "anchor": "Resumen en NBA.com",
-            "icon": "newspaper",
-            "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch"
+            "group": "Las Finales",
+            "pages": [
+              "es/series",
+              "es/game4",
+              "es/numbers"
+            ]
           },
           {
-            "anchor": "Registro de Cambios",
-            "icon": "clock-rotate-left",
-            "href": "/es/changelog"
+            "group": "La Celebración",
+            "pages": [
+              "es/parade",
+              "es/fans"
+            ]
+          },
+          {
+            "group": "Las Leyendas",
+            "pages": [
+              "es/roster"
+            ]
+          },
+          {
+            "group": "Detrás del Banderín",
+            "pages": [
+              "es/colophon",
+              "es/changelog"
+            ]
           }
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Watch the Parade",
+          "icon": "youtube",
+          "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM"
+        },
+        {
+          "anchor": "NBA.com Recap",
+          "icon": "newspaper",
+          "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/light.svg",
