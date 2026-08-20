@@ -1,0 +1,117 @@
+/* ============================================================
+   KNICKS IN 5 — "Broadway Gold" skin
+   Auto-loaded by Mintlify. All classes namespaced .ki5-*
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  --ki5-ink:#0B1220;
+  --ki5-ink2:#0E1A30;
+  --ki5-panel:#10294D;
+  --ki5-line:#1E3253;
+  --ki5-blue:#006BB6;
+  --ki5-blue-br:#1F8FE0;
+  --ki5-orange:#F58426;
+  --ki5-orange-dp:#DA6A12;
+  --ki5-silver:#9DA9BE;
+  --ki5-text:#F3F6FC;
+  --ki5-gold:#F7E4B0;
+}
+
+/* selection + small global flair (safe, non-structural) */
+::selection{background:var(--ki5-orange);color:#20140a}
+.ki5-mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}
+
+/* ---------- HERO / JUMBOTRON ---------- */
+.ki5-hero{
+  position:relative;overflow:hidden;border-radius:20px;
+  margin:8px 0 30px;padding:52px 30px 46px;
+  background:
+    radial-gradient(60% 60% at 20% 0%, rgba(245,132,38,.28), transparent 60%),
+    radial-gradient(55% 60% at 90% 15%, rgba(0,107,182,.40), transparent 62%),
+    linear-gradient(180deg,#0d1830,#0a1120);
+  border:1px solid var(--ki5-line);
+  color:var(--ki5-text);
+}
+.ki5-hero .ki5-eyebrow{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.26em;font-size:.72rem;color:var(--ki5-orange);margin-bottom:14px}
+.ki5-title{
+  font-family:Anton,"Arial Narrow",sans-serif;text-transform:uppercase;line-height:.9;
+  font-size:clamp(3rem,10vw,6.5rem);margin:0;color:var(--ki5-text);letter-spacing:.01em;text-wrap:balance;
+}
+.ki5-title .o{color:var(--ki5-orange);text-shadow:0 0 40px rgba(245,132,38,.35)}
+.ki5-sub{margin:18px 0 0;max-width:60ch;color:var(--ki5-silver);font-size:1.12rem}
+.ki5-sub b{color:var(--ki5-text)}
+
+.ki5-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.ki5-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;
+  font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid var(--ki5-line);background:rgba(16,41,77,.55);color:var(--ki5-gold)}
+.ki5-pill.solid{background:var(--ki5-orange);color:#20140a;border-color:transparent;font-weight:700}
+
+/* ---------- SCOREBOARD STRIP ---------- */
+.ki5-scorestrip{display:flex;flex-wrap:wrap;gap:0;margin-top:30px;border:1px solid var(--ki5-line);border-radius:14px;overflow:hidden;width:max-content;max-width:100%;background:var(--ki5-ink2)}
+.ki5-cell{padding:12px 20px;text-align:center;border-right:1px solid var(--ki5-line);min-width:78px}
+.ki5-cell:last-child{border-right:0}
+.ki5-cell .n{font-family:Anton,sans-serif;font-size:1.9rem;line-height:1;color:var(--ki5-text)}
+.ki5-cell.win .n{color:var(--ki5-orange)}
+.ki5-cell .l{font-family:"Space Mono",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ki5-silver);margin-top:6px}
+
+/* ---------- PLAYER TRADING CARD ---------- */
+.ki5-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+@media(max-width:820px){.ki5-grid{grid-template-columns:1fr}}
+.ki5-cardwrap{perspective:1000px}
+.ki5-card{
+  position:relative;border-radius:18px;padding:20px;overflow:hidden;color:var(--ki5-text);
+  background:linear-gradient(200deg,#10294D 0%,#0B1524 72%);
+  border:1px solid #234066;transition:transform .25s ease,box-shadow .25s ease;transform-style:preserve-3d;
+  box-shadow:0 18px 40px -24px rgba(0,0,0,.9);
+}
+.ki5-cardwrap:hover .ki5-card{transform:rotateX(6deg) rotateY(-7deg) translateY(-6px);box-shadow:-22px 28px 56px -30px rgba(0,0,0,.95),0 0 0 1px var(--ki5-orange)}
+.ki5-card::after{content:"";position:absolute;top:-40%;right:-30%;width:70%;height:120%;background:radial-gradient(closest-side,rgba(245,132,38,.26),transparent);pointer-events:none}
+.ki5-jersey{position:absolute;right:6px;bottom:-24px;font-family:Anton,sans-serif;font-size:9rem;line-height:1;color:rgba(255,255,255,.05);z-index:0}
+.ki5-card .top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:2}
+.ki5-card .pos{font-family:"Space Mono",monospace;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ki5-gold)}
+.ki5-card .bdg{background:var(--ki5-orange);color:#20140a;font-family:"Space Mono",monospace;font-weight:700;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;white-space:nowrap}
+.ki5-card .nm{position:relative;z-index:2;margin:18px 0 0;font-family:Anton,sans-serif;font-size:2.4rem;line-height:.9;text-transform:uppercase}
+.ki5-card .nm small{display:block;font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.06em;color:var(--ki5-silver);margin-top:8px;text-transform:none}
+.ki5-card .stats{position:relative;z-index:2;display:flex;gap:18px;margin-top:16px;border-top:1px solid var(--ki5-line);padding-top:14px}
+.ki5-card .stats .v{font-family:Anton,sans-serif;font-size:1.5rem;color:var(--ki5-orange);font-variant-numeric:tabular-nums}
+.ki5-card .stats .k{font-family:"Space Mono",monospace;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ki5-silver)}
+.ki5-card .q{position:relative;z-index:2;margin-top:14px;font-style:italic;font-size:.95rem;color:var(--ki5-text)}
+
+/* ---------- DOLAN WATCH ---------- */
+.ki5-dolan{border:1px solid #3a2a12;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#1a1206,#120d05);color:var(--ki5-text);margin:18px 0}
+.ki5-dolan .hd{display:flex;align-items:center;gap:10px;padding:13px 18px;background:linear-gradient(90deg,rgba(245,132,38,.22),transparent);border-bottom:1px solid #3a2a12}
+.ki5-dolan .hd h3{margin:0;font-family:Anton,sans-serif;font-size:1.2rem;letter-spacing:.02em;text-transform:uppercase;color:var(--ki5-gold)}
+.ki5-dolan .bd{padding:16px 18px}
+.ki5-dolan .bd p{margin:0 0 12px}
+.ki5-dolan .note{color:var(--ki5-silver);font-size:.94rem}
+.ki5-meter{margin-top:6px}
+.ki5-meter .ml{display:flex;justify-content:space-between;font-family:"Space Mono",monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ki5-silver);margin-bottom:7px}
+.ki5-meter .ml .val{font-family:Anton,sans-serif;color:var(--ki5-orange)}
+.ki5-meter .track{height:12px;border-radius:999px;background:#241a0c;overflow:hidden;border:1px solid #3a2a12}
+.ki5-meter .fill{height:100%;background:linear-gradient(90deg,var(--ki5-orange),var(--ki5-gold));border-radius:999px}
+
+/* ---------- SCOREBOARD PULL-QUOTE ---------- */
+.ki5-board{position:relative;border-radius:18px;padding:32px 24px;text-align:center;margin:22px 0;
+  background:radial-gradient(120% 120% at 50% -20%,#0f2140,#080d18);border:1px solid var(--ki5-line);
+  box-shadow:inset 0 0 0 3px rgba(0,0,0,.4),inset 0 0 60px rgba(0,107,182,.15);color:var(--ki5-text)}
+.ki5-board .q{font-family:Anton,sans-serif;font-size:clamp(1.6rem,4.5vw,2.9rem);line-height:1.02;text-transform:uppercase;color:var(--ki5-gold);text-shadow:0 0 26px rgba(247,228,176,.25)}
+.ki5-board .cite{margin-top:14px;font-family:"Space Mono",monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ki5-silver)}
+.ki5-board .cite b{color:var(--ki5-orange)}
+
+/* ---------- STAT TILES ---------- */
+.ki5-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0}
+.ki5-tile{background:linear-gradient(180deg,#0f2140,#0a1120);border:1px solid var(--ki5-line);border-radius:14px;padding:18px;text-align:center;color:var(--ki5-text)}
+.ki5-tile .statnum{font-family:Anton,sans-serif;font-size:2.6rem;line-height:1;color:var(--ki5-orange);font-variant-numeric:tabular-nums}
+.ki5-tile .cap{font-family:"Space Mono",monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ki5-silver);margin-top:8px}
+
+/* ---------- misc ---------- */
+.ki5-vid{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--ki5-line);margin:16px 0}
+.ki5-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ki5-center{text-align:center}
+.ki5-confetti-canvas{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:60}
+
+@media (prefers-reduced-motion: reduce){
+  .ki5-cardwrap:hover .ki5-card{transform:none}
+}

@@ -3,31 +3,68 @@
   "theme": "mint",
   "name": "Knicks in 5",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F58426",
+    "light": "#F7A85C",
+    "dark": "#DA6A12"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "fonts": {
+    "heading": { "family": "Anton" },
+    "body": { "family": "Inter" }
+  },
+  "banner": {
+    "content": "🏀 **NBA CHAMPIONS 2026** — Knicks in 5. 53 years in the making. (psst: try the Konami code)",
+    "dismissible": true
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "The Ring",
         "pages": [
-          "index",
-          "quickstart"
+          "index"
+        ]
+      },
+      {
+        "group": "The Finals",
+        "pages": [
+          "series",
+          "game4",
+          "numbers"
+        ]
+      },
+      {
+        "group": "The Celebration",
+        "pages": [
+          "parade",
+          "fans"
+        ]
+      },
+      {
+        "group": "The Legends",
+        "pages": [
+          "roster"
+        ]
+      },
+      {
+        "group": "Behind the Banner",
+        "pages": [
+          "colophon"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Watch the Parade",
+          "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM",
+          "icon": "youtube"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "NBA.com Recap",
+          "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch",
           "icon": "newspaper"
         }
       ]
@@ -40,14 +77,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Go Knicks",
+        "href": "https://www.nba.com/knicks"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Banner No. 3",
+      "href": "https://en.wikipedia.org/wiki/2026_NBA_Finals"
     }
   },
   "contextual": {
@@ -55,18 +92,13 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/nyknicks",
+      "github": "https://github.com/winderba/Ki5"
     }
   }
 }

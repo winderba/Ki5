@@ -1,0 +1,76 @@
+---
+title: "By the Numbers"
+description: "The championship box score — served, for fun, as a stat API."
+---
+
+<div className="ki5-hero">
+  <div className="ki5-eyebrow">GET /finals/2026 · 200 OK</div>
+  <h1 className="ki5-title">BY THE <span className="o">NUMBERS</span></h1>
+  <p className="ki5-sub">Because this is technically a docs site, we're documenting the title like an API. Same facts. More monospace. <b>Endpoints are illustrative</b> — the numbers are real.</p>
+</div>
+
+<div className="ki5-tiles">
+  <div className="ki5-tile"><div className="statnum" data-to="32.6" data-suffix="">32.6</div><div className="cap">Brunson Finals PPG</div></div>
+  <div className="ki5-tile"><div className="statnum" data-to="4">4</div><div className="cap">wins, all from behind</div></div>
+  <div className="ki5-tile"><div className="statnum" data-to="14">14</div><div className="cap">Spurs threes, G4 half</div></div>
+  <div className="ki5-tile"><div className="statnum" data-to="1.2" data-suffix="s">1.2s</div><div className="cap">on Anunoby's tip-in</div></div>
+</div>
+
+## The stat schema
+
+<ResponseField name="finals_mvp" type="string" required>
+  `Jalen Brunson`. Averaged ~32.6 in the series; dropped 45 in Game 5 (franchise Finals record, passing Willis Reed's 38).
+</ResponseField>
+
+<ResponseField name="series_result" type="string" required>
+  `NYK 4 – SAS 1`. Knicks in five. Yes, exactly like the repo name.
+</ResponseField>
+
+<ResponseField name="comebacks" type="integer">
+  `4` — number of Knicks wins that began with a double-digit deficit. Also the number of wins they had.
+</ResponseField>
+
+<ResponseField name="drought_ended" type="integer">
+  `53` years. Previous title: 1973.
+</ResponseField>
+
+## The box score, three ways
+
+<CodeGroup>
+
+```json finals.json
+{
+  "champion": "New York Knicks",
+  "series": "4-1",
+  "mvp": { "name": "Jalen Brunson", "g5_pts": 45 },
+  "clincher": { "date": "2026-06-13", "score": "94-90", "site": "San Antonio" },
+  "signature_win": { "game": 4, "deficit": 29, "record": "largest Finals comeback ever" }
+}
+```
+
+```csv finals.csv
+game,site,result,score,note
+1,SA,W,105-95,down 14
+2,SA,W,105-104,+1
+3,NY,L,111-115,Spurs' only win
+4,NY,W,107-106,+29 comeback
+5,SA,W,94-90,clincher
+```
+
+```markdown finals.md
+| Game | Result | Score  | The story                 |
+|------|--------|--------|---------------------------|
+| 1    | W      | 105-95 | Erased a 14-pt hole       |
+| 4    | W      | 107-106| Down 81-52. Miracle.      |
+| 5    | W      | 94-90  | Brunson 45. Banner No. 3. |
+```
+
+</CodeGroup>
+
+## Team colors, for the record
+
+The warpaint this whole site is painted in: Knicks orange `#F58426` and Knicks royal blue `#006BB6`, on a court-night background of `#0B1220`.
+
+<Info>
+Everything above is real. The only fiction is pretending Jalen Brunson has a REST endpoint. Given June, it wouldn't have returned a 500 either way.
+</Info>

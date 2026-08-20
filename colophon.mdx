@@ -1,0 +1,77 @@
+---
+title: "Behind the Banner"
+description: "How this love letter was built — the repo, the skin, and the components."
+---
+
+<div className="ki5-hero">
+  <div className="ki5-eyebrow">Colophon · How the sausage (and the confetti) is made</div>
+  <h1 className="ki5-title">BEHIND THE <span className="o">BANNER</span></h1>
+  <p className="ki5-sub">Underneath the warpaint, this is a plain Mintlify docs site — just wearing a custom skin, some confetti, and a great deal of civic pride.</p>
+</div>
+
+## What's in the repo
+
+<Tree>
+  <Tree.Folder name="Ki5" defaultOpen>
+    <Tree.File name="docs.json" />
+    <Tree.File name="custom.css" />
+    <Tree.File name="custom.js" />
+    <Tree.File name="index.mdx" />
+    <Tree.Folder name="chapters" defaultOpen>
+      <Tree.File name="series.mdx" />
+      <Tree.File name="game4.mdx" />
+      <Tree.File name="parade.mdx" />
+    </Tree.Folder>
+    <Tree.Folder name="logo">
+      <Tree.File name="light.svg" />
+      <Tree.File name="dark.svg" />
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+<GitHub.Repo repo="winderba/Ki5" />
+
+## How the skin works
+
+<Steps>
+  <Step title="docs.json sets the bones">
+    Orange primary (`#F58426`), dark by default, Anton for headings and Inter for body.
+  </Step>
+  <Step title="custom.css paints the warpaint">
+    Auto-loaded by Mintlify. Every hero, trading card, scoreboard, and Dolan Watch box is a namespaced `.ki5-*` class.
+  </Step>
+  <Step title="custom.js drops the confetti">
+    A tiny canvas engine — ambient confetti on the homepage, plus a Konami-code burst on any page.
+  </Step>
+</Steps>
+
+## Build your own tribute
+
+<Prompt description="Steal this prompt for your own team's site">
+Build me a Mintlify docs site that's a love letter to my team's championship. Use the team's colors, add a custom.css skin with hero jumbotrons and player trading cards, a custom.js confetti effect, and write it in a cinematic voice. Make it fun and a little silly.
+</Prompt>
+
+## The component roll call
+
+This site puts a lot of Mintlify's components to work in service of one very happy occasion:
+
+<CodeGroup>
+
+```text used-here
+Hero heroes:  Cards · CardGroup · Columns · Tabs · Steps · Accordion
+Callouts:     Note · Tip · Info · Warning · Check
+Data:         CodeGroup · ResponseField · Mermaid · color swatches
+Structure:    Update · Expandable · Tooltip · Icon · Tree · GitHub · Prompt
+Custom:       ki5-hero · ki5-card · ki5-dolan · ki5-board · ki5-tiles
+```
+
+```text skipped-on-purpose
+A few components (View · Visibility · Badge) sat this one out —
+their syntax wasn't confirmed and we'd rather ship confetti than a broken build.
+```
+
+</CodeGroup>
+
+<Note>
+Made with orange, blue, and 53 years of patience. Go Knicks. 🏀🧡
+</Note>
