@@ -112,6 +112,18 @@
 .ki5-center{text-align:center}
 .ki5-confetti-canvas{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:60}
 
+/* confetti toggle button injected into the top nav */
+.ki5-confetti-btn{
+  cursor:pointer;white-space:nowrap;font-family:"Space Mono",monospace;font-size:.72rem;font-weight:700;
+  letter-spacing:.04em;line-height:1;padding:7px 12px;border-radius:999px;
+  color:#20140a;background:var(--ki5-orange);border:1px solid transparent;
+  transition:filter .15s ease, transform .15s ease;
+}
+.ki5-confetti-btn:hover{filter:brightness(1.08)}
+.ki5-confetti-btn:active{transform:translateY(1px)}
+.ki5-confetti-btn[data-on="1"]{background:var(--ki5-blue);color:#eaf3fb;box-shadow:0 0 0 2px rgba(31,143,224,.35)}
+.ki5-confetti-btn:focus-visible{outline:2px solid var(--ki5-gold);outline-offset:2px}
+
 @media (prefers-reduced-motion: reduce){
   .ki5-cardwrap:hover .ki5-card{transform:none}
 }

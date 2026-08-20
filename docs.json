@@ -15,7 +15,7 @@
     "body": { "family": "Inter" }
   },
   "banner": {
-    "content": "🏀 **NBA CHAMPIONS 2026** — Knicks in 5. 53 years in the making. (psst: try the Konami code)",
+    "content": "The New York Knicks are NBA champions!",
     "dismissible": true
   },
   "favicon": "/favicon.svg",
@@ -55,7 +55,8 @@
           {
             "group": "Behind the Banner",
             "pages": [
-              "colophon"
+              "colophon",
+              "changelog"
             ]
           }
         ]
@@ -93,7 +94,8 @@
           {
             "group": "Detrás del Banner",
             "pages": [
-              "es/colophon"
+              "es/colophon",
+              "es/changelog"
             ]
           }
         ]
@@ -124,12 +126,7 @@
         "label": "Go Knicks",
         "href": "https://www.nba.com/knicks"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Banner No. 3",
-      "href": "https://en.wikipedia.org/wiki/2026_NBA_Finals"
-    }
+    ]
   },
   "contextual": {
     "options": [
