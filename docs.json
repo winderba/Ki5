@@ -23,39 +23,45 @@
     "languages": [
       {
         "language": "en",
-        "pages": [
-          { "group": "The Ring", "pages": ["index"] },
-          { "group": "The Finals", "pages": ["series", "game4", "numbers"] },
-          { "group": "The Celebration", "pages": ["parade", "fans"] },
-          { "group": "The Legends", "pages": ["roster"] },
-          { "group": "Behind the Banner", "pages": ["colophon", "changelog"] }
+        "anchors": [
+          {
+            "anchor": "Watch the Parade",
+            "icon": "youtube",
+            "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM"
+          },
+          {
+            "anchor": "NBA.com Recap",
+            "icon": "newspaper",
+            "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch"
+          },
+          {
+            "anchor": "Changelog",
+            "icon": "clock-rotate-left",
+            "href": "/changelog"
+          }
         ]
       },
       {
         "language": "es",
-        "pages": [
-          { "group": "El Anillo", "pages": ["es/index"] },
-          { "group": "Las Finales", "pages": ["es/series", "es/game4", "es/numbers"] },
-          { "group": "La Celebración", "pages": ["es/parade", "es/fans"] },
-          { "group": "Las Leyendas", "pages": ["es/roster"] },
-          { "group": "Detrás del Banderín", "pages": ["es/colophon", "es/changelog"] }
+        "anchors": [
+          {
+            "anchor": "Ver el Desfile",
+            "icon": "youtube",
+            "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM"
+          },
+          {
+            "anchor": "Resumen en NBA.com",
+            "icon": "newspaper",
+            "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch"
+          },
+          {
+            "anchor": "Registro de Cambios",
+            "icon": "clock-rotate-left",
+            "href": "/es/changelog"
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Watch the Parade",
-          "href": "https://www.youtube.com/watch?v=DJ0ODjTD3SM",
-          "icon": "youtube"
-        },
-        {
-          "anchor": "NBA.com Recap",
-          "href": "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
