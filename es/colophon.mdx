@@ -1,0 +1,77 @@
+---
+title: "Detrás del banner"
+description: "Cómo se construyó esta carta de amor — el repositorio, la estética y los componentes."
+---
+
+<div className="ki5-hero">
+  <div className="ki5-eyebrow">Colofón · Cómo se hace la salchicha (y el confeti)</div>
+  <h1 className="ki5-title">DETRÁS DEL <span className="o">BANNER</span></h1>
+  <p className="ki5-sub">Debajo de la pintura de guerra, esto es un sitio de documentación Mintlify normal y corriente — solo que con una estética personalizada, algo de confeti y un enorme orgullo cívico.</p>
+</div>
+
+## Qué hay en el repositorio
+
+<Tree>
+  <Tree.Folder name="Ki5" defaultOpen>
+    <Tree.File name="docs.json" />
+    <Tree.File name="custom.css" />
+    <Tree.File name="custom.js" />
+    <Tree.File name="index.mdx" />
+    <Tree.Folder name="chapters" defaultOpen>
+      <Tree.File name="series.mdx" />
+      <Tree.File name="game4.mdx" />
+      <Tree.File name="parade.mdx" />
+    </Tree.Folder>
+    <Tree.Folder name="logo">
+      <Tree.File name="light.svg" />
+      <Tree.File name="dark.svg" />
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+<GitHub.Repo repo="winderba/Ki5" />
+
+## Cómo funciona la estética
+
+<Steps>
+  <Step title="docs.json marca la estructura">
+    Naranja como color primario (`#F58426`), tema oscuro por defecto, Anton para los títulos e Inter para el cuerpo.
+  </Step>
+  <Step title="custom.css pinta la pintura de guerra">
+    Se carga automáticamente en Mintlify. Cada hero, carta de colección, marcador y caja de Dolan Watch es una clase con espacio de nombres `.ki5-*`.
+  </Step>
+  <Step title="custom.js suelta el confeti">
+    Un motor de canvas minúsculo — confeti ambiental en la página principal, más una explosión con código Konami en cualquier página.
+  </Step>
+</Steps>
+
+## Construye tu propio tributo
+
+<Prompt description="Roba este prompt para el sitio de tu equipo">
+Build me a Mintlify docs site that's a love letter to my team's championship. Use the team's colors, add a custom.css skin with hero jumbotrons and player trading cards, a custom.js confetti effect, and write it in a cinematic voice. Make it fun and a little silly.
+</Prompt>
+
+## Lista de componentes
+
+Este sitio pone a trabajar muchos componentes de Mintlify al servicio de una ocasión muy feliz:
+
+<CodeGroup>
+
+```text used-here
+Hero heroes:  Cards · CardGroup · Columns · Tabs · Steps · Accordion
+Callouts:     Note · Tip · Info · Warning · Check
+Data:         CodeGroup · ResponseField · Mermaid · color swatches
+Structure:    Update · Expandable · Tooltip · Icon · Tree · GitHub · Prompt
+Custom:       ki5-hero · ki5-card · ki5-dolan · ki5-board · ki5-tiles
+```
+
+```text skipped-on-purpose
+A few components (View · Visibility · Badge) sat this one out —
+their syntax wasn't confirmed and we'd rather ship confetti than a broken build.
+```
+
+</CodeGroup>
+
+<Note>
+Hecho con naranja, azul y 53 años de paciencia. Go Knicks. 🏀🧡
+</Note>

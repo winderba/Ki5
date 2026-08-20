@@ -20,38 +20,82 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "The Ring",
+        "language": "en",
+        "default": true,
         "pages": [
-          "index"
+          {
+            "group": "The Ring",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "The Finals",
+            "pages": [
+              "series",
+              "game4",
+              "numbers"
+            ]
+          },
+          {
+            "group": "The Celebration",
+            "pages": [
+              "parade",
+              "fans"
+            ]
+          },
+          {
+            "group": "The Legends",
+            "pages": [
+              "roster"
+            ]
+          },
+          {
+            "group": "Behind the Banner",
+            "pages": [
+              "colophon"
+            ]
+          }
         ]
       },
       {
-        "group": "The Finals",
+        "language": "es",
         "pages": [
-          "series",
-          "game4",
-          "numbers"
-        ]
-      },
-      {
-        "group": "The Celebration",
-        "pages": [
-          "parade",
-          "fans"
-        ]
-      },
-      {
-        "group": "The Legends",
-        "pages": [
-          "roster"
-        ]
-      },
-      {
-        "group": "Behind the Banner",
-        "pages": [
-          "colophon"
+          {
+            "group": "El Anillo",
+            "pages": [
+              "es/index"
+            ]
+          },
+          {
+            "group": "Las Finales",
+            "pages": [
+              "es/series",
+              "es/game4",
+              "es/numbers"
+            ]
+          },
+          {
+            "group": "La Celebración",
+            "pages": [
+              "es/parade",
+              "es/fans"
+            ]
+          },
+          {
+            "group": "Las Leyendas",
+            "pages": [
+              "es/roster"
+            ]
+          },
+          {
+            "group": "Detrás del Banner",
+            "pages": [
+              "es/colophon"
+            ]
+          }
         ]
       }
     ],
