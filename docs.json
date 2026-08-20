@@ -51,7 +51,8 @@
       {
         "group": "Behind the Banner",
         "pages": [
-          "colophon"
+          "colophon",
+          "changelog"
         ]
       }
     ],
