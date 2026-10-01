@@ -3,16 +3,17 @@
   "theme": "mint",
   "name": "Knicks in 5",
   "colors": {
-    "primary": "#F58426",
-    "light": "#F7A85C",
-    "dark": "#DA6A12"
+    "primary": "#16A34A",
+    "light": "#A6FB33",
+    "dark": "#1B512D"
   },
   "appearance": {
     "default": "dark"
   },
   "fonts": {
-    "heading": { "family": "Anton" },
-    "body": { "family": "Inter" }
+    "body": {
+      "family": "Inter"
+    }
   },
   "banner": {
     "content": "The New York Knicks are NBA champions!",
@@ -139,6 +140,14 @@
     "socials": {
       "x": "https://x.com/nyknicks",
       "github": "https://github.com/winderba/Ki5"
+    }
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "background": {
+    "color": {
+      "dark": "#003421"
     }
   }
 }

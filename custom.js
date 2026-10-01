@@ -4,7 +4,7 @@
    ============================================================ */
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var COLORS = ['#F58426', '#006BB6', '#F7E4B0', '#F3F6FC', '#1F8FE0'];
+  var COLORS = ['#003421', '#1B512D', '#16A34A', '#A6FB33', '#D6FA7E'];
 
   var ambient = null; // { canvas, raf } when running
 
